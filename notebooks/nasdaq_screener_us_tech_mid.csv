@@ -1,0 +1,28 @@
+Symbol,Name,Last Sale,Net Change,% Change, Market Cap ,Country,IPO Year,Volume,Sector,Industry,Found in pricing csv
+PTC,PTC Inc. Common Stock,$167.93 ,1.36,0.82%,"$20,205,932,408.00 ",United States,,1358985,Technology,Computer Software: Prepackaged Software,PTC
+ON,ON Semiconductor Corporation Common Stock,$50.92 ,0.86,1.72%,"$21,458,763,787.00 ",United States,,7400062,Technology,Semiconductors,ON
+MDB,MongoDB Inc. Class A Common Stock,$292.97 ,0.51,0.17%,"$21,817,650,510.00 ",United States,2017,1496978,Technology,Computer Software: Prepackaged Software,MDB
+SSNC,SS&C Technologies Holdings Inc. Common Stock,$88.58 ,0.49,0.56%,"$21,939,948,904.00 ",United States,2010,1168939,Technology,Computer Software: Prepackaged Software,SSNC
+VRSN,VeriSign Inc. Common Stock,$229.34 ,1.85,0.81%,"$22,039,574,000.00 ",United States,1998,817694,Technology,EDP Services,VRSN
+WDC,Western Digital Corporation Common Stock,$67.56 ,0.28,0.42%,"$23,498,982,819.00 ",United States,,5593689,Technology,Electronic Components,WDC
+GFS,GlobalFoundries Inc. Ordinary Shares,$42.82 ,-0.73,-1.68%,"$23,702,933,496.00 ",United States,2021,3885413,Technology,Semiconductors,GFS
+NTAP,NetApp Inc. Common Stock,$117.73 ,-0.17,-0.14%,"$23,935,265,298.00 ",United States,1995,1306085,Technology,Electronic Components,NTAP
+SMCI,Super Micro Computer Inc. Common Stock,$42.28 ,2.6,6.55%,"$24,757,699,616.00 ",United States,2020,110368060,Technology,Computer Manufacturing,SMCI
+ZM,Zoom Communications Inc. Class A Common Stock,$85.16 ,2.11,2.54%,"$26,101,108,324.00 ",United States,2019,1733446,Technology,Computer Software: Programming Data Processing,ZM
+MCHP,Microchip Technology Incorporated Common Stock,$54.26 ,0.41,0.76%,"$29,182,057,258.00 ",United States,1993,6793360,Technology,Semiconductors,MCHP
+ANSS,ANSYS Inc. Common Stock,$339.17 ,5.045,1.51%,"$29,659,963,648.00 ",United States,1996,550836,Technology,Computer Software: Prepackaged Software,ANSS
+ZS,Zscaler Inc. Common Stock,$214.84 ,3.7,1.75%,"$32,964,753,765.00 ",United States,2018,2100738,Technology,EDP Services,ZS
+EA,Electronic Arts Inc. Common Stock,$129.82 ,-1.35,-1.03%,"$33,833,376,053.00 ",United States,,3087695,Technology,Computer Software: Prepackaged Software,EA
+MPWR,Monolithic Power Systems Inc. Common Stock,$699.99 ,0.53,0.08%,"$34,145,512,200.00 ",United States,2004,478239,Technology,Semiconductors,MPWR
+TTWO,Take-Two Interactive Software Inc. Common Stock,$210.09 ,0.91,0.44%,"$37,079,982,874.00 ",United States,1997,1338313,Technology,Computer Software: Prepackaged Software,TTWO
+TTD,The Trade Desk Inc. Class A Common Stock,$81.92 ,-40.31,-32.98%,"$40,433,574,953.00 ",United States,2016,56005978,Technology,Computer Software: Programming Data Processing,TTD
+VRSK,Verisk Analytics Inc. Common Stock,$295.50 ,2.44,0.83%,"$41,727,742,347.00 ",United States,2009,461893,Technology,EDP Services,VRSK
+CTSH,Cognizant Technology Solutions Corporation Class A Common Stock,$89.58 ,1.5,1.70%,"$44,307,657,744.00 ",United States,1998,2543236,Technology,EDP Services,CTSH
+DDOG,Datadog Inc. Class A Common Stock,$135.89 ,-12.2,-8.24%,"$46,164,965,944.00 ",United States,2019,20141609,Technology,Computer Software: Prepackaged Software,DDOG
+ADSK,Autodesk Inc. Common Stock,$303.48 ,6.2,2.09%,"$65,248,200,000.00 ",United States,,1288094,Technology,Computer Software: Prepackaged Software,ADSK
+WDAY,Workday Inc. Class A Common Stock,$260.13 ,2.21,0.86%,"$69,194,580,000.00 ",United States,,1923787,Technology,EDP Services,WDAY
+CDNS,Cadence Design Systems Inc. Common Stock,$296.16 ,2.115,0.72%,"$81,225,730,080.00 ",United States,,1792795,Technology,Computer Software: Prepackaged Software,CDNS
+SNPS,Synopsys Inc. Common Stock,$528.29 ,18.58,3.65%,"$81,662,248,822.00 ",United States,1992,1049392,Technology,Computer Software: Prepackaged Software,SNPS
+MSTR,MicroStrategy Incorporated Common Stock Class A,$324.92 ,-1.9,-0.58%,"$81,921,797,245.00 ",United States,1998,9848079,Technology,Computer Software: Prepackaged Software,MSTR
+FTNT,Fortinet Inc. Common Stock,$109.98 ,2.28,2.12%,"$84,294,467,726.00 ",United States,2009,3601424,Technology,Computer peripheral equipment,FTNT
+MRVL,Marvell Technology Inc. Common Stock,$103.50 ,-1.92,-1.82%,"$89,558,550,000.00 ",United States,2000,12686379,Technology,Semiconductors,MRVL
