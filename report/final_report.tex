@@ -1,0 +1,147 @@
+\documentclass[twocolumn]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\title{Final Report: NLP-Driven Financial Sentiment Analysis and Risk Scoring}
+\author{NDR Team \#4: Brian Adams, Hilung Huang, Luis Tupac\\NED Davis Research – Practicum, GT - Spring 2025}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report presents our project which leverages Natural Language Processing (NLP) to analyze sentiment indicators from financial data, headline news, and SEC filings. The primary goal is to develop a Risk Score for the S\&P 500 index that identifies market inflection points. The report covers data collection, exploratory analysis, a literature review, model surveys, preliminary results, and outlines next steps.
+\end{abstract}
+
+\section{Introduction}
+\subsection{Project Aim}
+The project aims to use NLP to analyze sentiment indicators from financial data, headline news, and SEC filings. Ultimately, our objective is to develop a Risk Score for the S\&P 500 index to identify market inflection points.
+
+\subsection{Background and Motivation}
+Investment sentiment plays a crucial role in market trends. News articles and SEC filings impact market movements by emphasizing risk-laden keywords such as ``bankrupt'' and ``lawsuit.'' The goal is to quantify the relationship between sentiment trends and financial health, thereby better predicting market volatility.
+
+\subsection{Project Objectives}
+\begin{itemize}
+    \item \textbf{Data Collection:} Collect data from the sponsor.
+    \item \textbf{High-Risk Dictionary:} Aggregate high-risk words from news headlines and SEC filings (with emphasis on 10-K reports, particularly Items 1 and 1A).
+    \item \textbf{Risk Score Development:} Create a Risk Score to help investors anticipate market drops.
+\end{itemize}
+
+\section{Project Summary}
+\subsection{Data Collection and Ingestion}
+All data are provided by our sponsor. We use DuckDB for seamless Python integration and efficient columnar storage.
+
+\subsection{Data Cleaning and Transformation}
+The data is divided into two schemas:
+\begin{itemize}
+    \item \textbf{Headline Schema:} Contains 16 tables built from financial news articles.
+    \item \textbf{SP500 Schema:} Contains 11 tables built from S\&P 500 market data.
+\end{itemize}
+\textbf{Insight:} Headline data are daily, while S\&P 500 data are quarterly; thus, headlines have greater importance due to higher frequency.
+
+\section{Exploratory Data Analysis (EDA)}
+\subsection{Headline Schema}
+\begin{itemize}
+    \item \textbf{Content:} Trading calendar, price and volume data, FinBERT sentiment data, and tokenized/lemmatized text data.
+    \item \textbf{Key Transformations:}
+    \begin{itemize}
+        \item Separation of sentiment from article titles and descriptions to reduce clickbait effects.
+        \item Application of a 3-day article window to capture extreme price drops.
+        \item Mapping articles to adjusted trading dates for improved correlation with market movements.
+    \end{itemize}
+\end{itemize}
+
+\subsection{SP500 Schema}
+\begin{itemize}
+    \item \textbf{Content:} CIK company information, price and volume data, and FinBERT financial report sentiment data.
+    \item \textbf{Key Transformations:}
+    \begin{itemize}
+        \item Combination of price and weekly data for all S\&P 500 stocks.
+        \item Merging of financial filings into a single entity for unified sentiment processing.
+    \end{itemize}
+\end{itemize}
+
+\section{Literature Review}
+\subsection{FinBERT: Financial Sentiment Analysis with BERT}
+FinBERT is a language model tailored for financial text analysis. It leverages transformers to enable bi-directional processing, although it has some limitations in capturing the specialized language of finance (“trader speak”).
+
+\subsection{Investor Sentiment and Market Trends}
+Tetlock’s research shows that negative sentiment in news articles (e.g., from the Wall Street Journal) can predict lower future stock returns and heightened market volatility. This insight is reflected in our incorporation of sentiment polarity in the Risk Score computation.
+
+\subsection{Event-Based Financial Modeling}
+Research by Hu and colleagues demonstrates that detecting significant financial events through NLP improves stock return predictions. This approach motivates our keyword-based method for tracking price swings by identifying events such as earnings reports, legal issues, and downgrades.
+
+\section{Model Survey and Methodology}
+\subsection{Baseline Models}
+\begin{itemize}
+    \item \textbf{Logistic Regression:} Used for binary prediction of price movement.
+    \item \textbf{Support Vector Machines (SVM):} Effective with high-dimensional text features.
+    \item \textbf{Random Forest:} Captures nonlinear relationships in the data.
+\end{itemize}
+
+\subsection{Sentiment-Enhanced and Article-Level Models}
+\begin{itemize}
+    \item \textbf{FinBERT Integration:} Incorporating finance-specific sentiment to improve upon models like VADER.
+    \item \textbf{Article-Level Regression Models:} Treating each article as an observation, using features such as risk terms, sentiment scores, and metadata to predict price changes.
+\end{itemize}
+
+\subsection{Hybrid Modeling Approach}
+Our approach combines daily aggregated signals (e.g., article volume and risk score) with granular article-level features (e.g., minimum sentiment, high-risk flags) to capture both overarching trends and detailed risk indicators.
+
+\section{Interesting Observations and Preliminary Results}
+\subsection{Observations}
+\begin{itemize}
+    \item A surge in articles often precedes market volatility.
+    \item Keywords such as ``downgrade,'' ``earnings,'' and ``acquisition'' frequently coincide with significant price swings.
+    \item News clustering across multiple sources can amplify market reactions.
+    \item Evening articles sometimes lead to notable price changes the following day.
+\end{itemize}
+
+\subsection{Preliminary Modeling Results}
+\begin{itemize}
+    \item \textbf{Initial Modeling:} An XGBoost model using only sentiment scores on selected tech stocks resulted in a negative R-squared, possibly due to the exaggeration in headline news.
+    \item \textbf{Improved Modeling:} By incorporating Risk Score, sentiment features (VADER and FinBERT), and article volume, models such as Random Forest and XGBoost performed notably better (R\textsuperscript{2} $\sim$ 0.67). Linear models (e.g., Ridge) underperformed, indicating the need for capturing complex interactions.
+\end{itemize}
+
+\section{Next Steps}
+\subsection{Integration and Enhancement}
+\begin{itemize}
+    \item \textbf{FinBERT Sentiment Integration:} Replace or combine VADER with FinBERT to refine the Adjusted Risk Score, comparing model performance before and after integration.
+    \item \textbf{Article-Level Modeling:} Treat each article as an independent observation, extracting features such as high-risk terms, sentiment scores, and earnings mentions.
+\end{itemize}
+
+\subsection{Hybrid and Time Series Exploration}
+\begin{itemize}
+    \item Develop a hybrid model that merges daily aggregation with article-level features (e.g., high-risk article flag, minimum sentiment, count of highly negative articles).
+    \item Incorporate macroeconomic indicators such as the VIX index to assess the impact of negative news on market volatility.
+    \item Extend the analysis to evaluate risk across different market sectors.
+\end{itemize}
+
+\section{Project Status and Progress}
+The project is currently advancing through several key phases:
+\begin{itemize}
+    \item \textbf{Data Exploration \& Pre-processing:} Completed.
+    \item \textbf{Identification of High-Risk Words and Risk Score Experimentation:} In progress.
+    \item \textbf{Finalization of Risk Score Methodology:} Under development.
+    \item \textbf{Modeling and Fine Tuning:} Actively testing various models.
+    \item \textbf{Application and Project Wrap-Up:} Upcoming.
+\end{itemize}
+Target milestones include data processing completion (3/21/2025) and final model deployment (4/1/2025).
+
+\section{Workload Distribution}
+\begin{itemize}
+    \item \textbf{Luis Tupac:} Database creation, data pipelines, and data transformation; FinBERT sentiment classification on financial reports and headline news.
+    \item \textbf{Brian Adams:} Exploratory Data Analysis, Risk Score computation, and initial model experimentation.
+    \item \textbf{Hilung Huang:} Overall project approach, initial modeling, and coordination of tasks.
+\end{itemize}
+
+\section{Conclusion}
+This report has outlined our approach to using NLP for financial sentiment analysis and risk scoring. With promising preliminary results, the next steps involve refining our models, integrating advanced sentiment analysis, and exploring hybrid approaches to enhance prediction accuracy. We look forward to further validating our methodology and deploying our final risk scoring system.
+
+\bibliographystyle{plain}
+\bibliography{references} % Add your references here
+
+\end{document}
