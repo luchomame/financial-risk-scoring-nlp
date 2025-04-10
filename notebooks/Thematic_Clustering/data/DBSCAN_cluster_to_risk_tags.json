@@ -1,0 +1,70 @@
+{
+  "-1": [
+    "Negative",
+    "Positive"
+  ],
+  "0": [
+    "Negative",
+    "Positive"
+  ],
+  "1": [
+    "Mixed Sentiment"
+  ],
+  "2": [
+    "Positive"
+  ],
+  "3": [
+    "Negative"
+  ],
+  "4": [
+    "Negative",
+    "Positive",
+    "Uncertainty"
+  ],
+  "5": [
+    "Mixed Sentiment"
+  ],
+  "6": [
+    "Negative",
+    "Uncertainty"
+  ],
+  "7": [
+    "Negative",
+    "Positive"
+  ],
+  "8": [
+    "Mixed Sentiment"
+  ],
+  "9": [
+    "Positive"
+  ],
+  "10": [
+    "Positive"
+  ],
+  "11": [
+    "Positive"
+  ],
+  "12": [
+    "Negative",
+    "Uncertainty"
+  ],
+  "13": [
+    "Mixed Sentiment"
+  ],
+  "14": [
+    "Negative"
+  ],
+  "15": [
+    "Positive"
+  ],
+  "16": [
+    "Negative",
+    "Positive"
+  ],
+  "17": [
+    "Mixed Sentiment"
+  ],
+  "18": [
+    "Positive"
+  ]
+}

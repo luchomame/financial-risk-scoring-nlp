@@ -27,6 +27,12 @@ share/python-wheels/
 MANIFEST
 *.db
 *.csv
+*.part
+notebooks/Thematic_Clustering/data/articles/*
+notebooks/Thematic_Clustering/models/*
+notebooks/Thematic_Clustering/new_data/*
+*.npy
+
 *.parquet
 articles_partitions/
 

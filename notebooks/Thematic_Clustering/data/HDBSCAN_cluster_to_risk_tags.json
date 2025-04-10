@@ -1,0 +1,35 @@
+{
+  "-1": [
+    "Negative",
+    "Positive"
+  ],
+  "0": [
+    "Mixed Sentiment"
+  ],
+  "2": [
+    "Negative",
+    "Uncertainty"
+  ],
+  "10": [
+    "Mixed Sentiment"
+  ],
+  "11": [
+    "Mixed Sentiment"
+  ],
+  "12": [
+    "Negative",
+    "Uncertainty"
+  ],
+  "13": [
+    "Negative",
+    "Positive"
+  ],
+  "14": [
+    "Mixed Sentiment"
+  ],
+  "15": [
+    "Negative",
+    "Positive",
+    "Uncertainty"
+  ]
+}
