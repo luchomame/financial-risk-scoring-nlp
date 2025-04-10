@@ -1,0 +1,13 @@
+install.packages(c(
+  "dplyr",
+  "duckdb",
+  "rugarch",
+  "FinTS",
+  "tseries",
+  "lubridate",
+  "fs",
+  "dotenv",
+  "tidyr",
+  "zoo",
+  "forecast"
+))

@@ -1,0 +1,9 @@
+duckdb
+pandas
+scipy
+matplotlib
+seaborn
+python-dotenv
+scikit-learn
+xgboost
+numpy

@@ -3,6 +3,16 @@
 ## Description
 This notebook coincides with the VIX Time Series Modeling section from the report.
 
+## Steps to Install 
+1. Install the requirements.txt in this subfolder. 
+
+**Example:**
+```python
+pip install -r requirements.txt
+```
+
+2. Run `install_packages.r` to install required R packages.
+
 ## Steps to Run
 
 ### 0. Create the Database File

@@ -1,0 +1,11 @@
+pandas
+dask[complete]
+pyarrow
+duckdb
+torch
+transformers
+numpy
+bokeh
+python-dotenv
+spacy
+nltk
