@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1744122382.64212 "main.aux" "main.bbl" "main" 1744122382.73173 2
+["bibtex main"] 1744209508.52755 "main.aux" "main.bbl" "main" 1744209510.6594 0
   "./references.bib" 1744136706 5362 e22f05e818fad2e787b05406309abda1 ""
-  "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1744122382.64098 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "/usr/local/texlive/2024/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
+  "main.aux" 1744209510.42257 22507 7ab6361c55f7ca4ba9b319c6e5271366 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744122380.61996 "/Users/bradams/Documents/OMSAPracticum-1/report/main.tex" "main.pdf" "main" 1744122382.55952 2
-  "/Users/bradams/Documents/OMSAPracticum-1/report/main.tex" 1744136706 79589 a8dba8a62e5cf36ad5a1e8912123ce09 ""
+["pdflatex"] 1744209508.61594 "/Users/bradams/Documents/OMSAPracticum-1/report/main.tex" "main.pdf" "main" 1744209510.65955 2
+  "/Users/bradams/Documents/OMSAPracticum-1/report/main.tex" 1744209506.20543 80261 3f43b11f1204568051957991ff1096d9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -99,6 +99,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty" 1654720880 8010 a8d949cbdbc5c983593827c9eec252e1 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty" 1654720880 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty" 1575499774 7133 b94bbacbee6e4fdccdc7f810b2aec370 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty" 1580250785 17914 4c28a13fc3d975e6e81c9bea1d697276 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def" 1705871765 48154 e46bf8adeb936500541441171d61726d ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty" 1705871765 220920 fd3cbb5f1a2bc9b8f451b8b7d8171264 ""
@@ -109,6 +110,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1665067230 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1708463273 30006 3d512c0edd558928ddea1690180ef77e ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty" 1291685959 45456 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty" 1686341992 32515 51caec75eda9c8890135f12f1a4eddc3 ""
@@ -136,10 +138,10 @@
   "headlines_schema.png" 1744136706 466476 a223c99a5f0940b4cfaa46681e63813b ""
   "log_scale_article_mod_performance.png" 1744136706 30697 34d71a5bf413306748fb12ce18c1cf13 ""
   "lowess_smoothing.png" 1744136708 29133 f86b0564e6d4e2d19923f4e381aa4bd0 ""
-  "main.aux" 1744122382.64098 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.bbl" 1744122382.73094 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1744136706 79589 a8dba8a62e5cf36ad5a1e8912123ce09 ""
+  "main.aux" 1744209510.42257 22507 7ab6361c55f7ca4ba9b319c6e5271366 "pdflatex"
+  "main.bbl" 1744209508.61361 3596 161e8be02b87899c8fbe215505e26381 "bibtex main"
+  "main.out" 1744209510.42379 13472 d940d996ba33341b4ccfd7bf05010d33 "pdflatex"
+  "main.tex" 1744209506.20543 80261 3f43b11f1204568051957991ff1096d9 ""
   "medallion_architecture.png" 1744136708 12167 9b1a45eaf3779ddc447a1193858bc33c ""
   "modeling_progression_diagram.png" 1744136708 13138 433a9fc0a2fed11700e1462dc32e41bd ""
   "regression_risk_volatility.png" 1744136708 56930 dbf0584e130a6309e6e4b15e7c77b88d ""

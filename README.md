@@ -4,51 +4,70 @@
 
 ## Project Overview
 
-This project, conducted in collaboration with **Ned Davis Research (NDR)**, explores the predictive power of aggregated sentiment indicators derived from financial data and SEC filings to identify potential market inflection points. By leveraging **Natural Language Processing (NLP)** and financial analytics, we aim to create a comprehensive "Risk Score" for the S&P 500 index and its historical constituents.
+In collaboration with Ned Davis Research (NDR), this project examines the feasibility of forecasting financial market risk through sentiment-based modeling of unstructured textual data. By aggregating sentiment signals derived from financial news articles and SEC filings using advanced Natural Language Processing (NLP) techniques, we aim to construct a data-driven Risk Score for the S&P 500 index and its historical constituents. The study incorporates multiple methodological pipelines, including token-level sentiment weighting, topic modeling using BERTopic, and market volatility forecasting via VIX regression and classification models. This work contributes to the broader field of financial NLP by evaluating the predictive value of linguistically extracted features in anticipating market inflection points.
 
 ### Background and Motivation
 
 Investment sentiment, often associated with behavioral finance, reflects the attitude and pulse of the human investor. This sentiment can be influenced by external factors like news articles, which are believed to hold valuable predictive insights into market trends. By analyzing high-risk words (e.g., "bankrupt," "lawsuit") in news headlines and SEC filings, this project seeks to measure market sentiment and its relationship to financial health and volatility.
 
-### Project Objectives
+---
 
-1. **Create a Risk Score**:
-   - Aggregate high-risk word occurrences across news headlines and SEC filings (10-K, Items 1 and 1A).
-   - Identify and evaluate predictive signals for potential market movements.
+### 🧭 Project Objectives
 
-2. **Integrate Financial Data**:
-   - Combine textual data with historical pricing information (weekly and daily) to assess sentiment impact.
+1. **Develop a Composite Risk Score**  
+   - Design a risk prediction metric using aggregated sentiment signals derived from SEC 10-K filings and financial news headlines.  
+   - Incorporate **token-level weighting**, **sentiment polarity**, and **contextual risk factors** to improve score granularity.
 
-3. **Deliver a Scalable Framework**:
-   - Provide a replicable methodology to evaluate market sentiment across various indices.
+2. **Integrate Textual and Quantitative Signals**  
+   - Merge NLP-derived features with historical pricing and volatility data (daily and weekly) for supervised learning.  
+   - Evaluate correlations between sentiment dynamics and market movements using both regression and classification approaches.
 
-### Data Overview
+3. **Experiment with Multi-Modal Predictive Models**  
+   - Compare traditional sentiment-based features with **topic modeling (e.g., BERTopic)** and **volatility forecasting (VIX-based models)**.  
+   - Assess model performance across various time horizons and asset types.
 
-The project utilizes multiple datasets covering the S&P 500 and a broader U.S. multi-cap universe, including:
+---
 
-- **SEC Filings**:
-  - Item 1 and Item 1A from 10-K filings.
-  - Historical company data files with detailed business and risk disclosures.
+### 📊 Data Overview
 
-- **Pricing Data**:
-  - Weekly and daily pricing data for S&P 500 constituents from 2000 to April 2023.
-  - Cap-weighted and equal-weighted index pricing.
+This project integrates a rich set of financial and textual datasets spanning the S&P 500 and broader U.S. equities:
 
-- **Headlines Data**:
-  - News headlines spanning multiple years, categorized by company ticker.
+- **SEC Filings**  
+  - Historical 10-K filings (Item 1 and 1A) for fundamental business and risk disclosures.
+  - Structured metadata linking filings to market cap, sector, and fiscal year.
 
-### Project Deliverables
+- **Pricing and Volatility Data**  
+  - Daily and weekly stock prices from 2000–2023.  
+  - S&P 500 index pricing (cap-weighted and equal-weighted).  
+  - VIX data for market volatility analysis.
 
-1. Develop a methodology to process and analyze SEC filings and news headlines.
-2. Generate a comprehensive Risk Score based on textual and financial data.
-3. Visualize key insights and trends across time and indices.
-4. Provide clear documentation and reproducible results for stakeholders.
+- **Headline News Corpus**  
+  - Company-specific headlines mapped to tickers and timeframes.  
+  - Pre-processed for entity recognition, tokenization, and sentiment scoring.
 
-### Tools and Technologies
+---
 
-- **Programming and Analysis**: Python, NLP libraries, financial data analysis packages.
-- **Version Control**: GitHub integration for collaborative development.
-- **Compliance Requirements**: Students must sign NDAs and follow NDR's strict data handling policies.
+### 📦 Project Deliverables
+
+1. A modular codebase for extracting and analyzing textual risk signals from financial documents and headlines.  
+2. A comprehensive **Risk Score** integrating sentiment, topic, and price-based indicators.  
+3. Comparative analysis of different modeling pipelines (e.g., FinBERT, token score regression, BERTopic, VIX forecasting).  
+4. Visualizations of sentiment trends, volatility correlations, and model performance over time.  
+5. Clean, reproducible notebooks and documentation for stakeholder and research use.
+
+---
+
+### 🛠️ Tools and Technologies
+
+- **Languages & Libraries**: Python, Pandas, Scikit-learn, XGBoost, BERTopic, FinBERT, DuckDB  
+- **Visualization**: Matplotlib, Seaborn, Plotly  
+- **Data Management**: SQL, DuckDB, Pandas  
+- **Version Control**: GitHub  
+- **Compliance**: Work conducted under NDR NDA with strict data governance protocols.
+
+---
+
+Would you like me to patch this into your actual `README.md` file or prepare a Markdown version for you to copy in manually?
 
 ### Compliance and Key Contacts
 
@@ -58,77 +77,56 @@ To ensure compliance, all participants are required to:
   
 Primary Contact: [Kiersten Engel](mailto:Kiersten.engel@ndr.com)
 
-For a detailed project description, refer to the [Kick-Off Presentation PDF](https://github.com/PandaPool85/OMSAPracticum/blob/main/Ga%20Tech%20Spring%2025%20Kick%20Off.pdf)).
+For a detailed project description, refer to the [Kick-Off Presentation PDF](https://github.gatech.edu/badams76/OMSAPracticum/blob/main/Ga%20Tech%20Spring%2025%20Kick%20Off.pdf).
 
 ---
 
-# Managing Changes in Colab with GitHub
+### 📦 Setup Instructions
 
-## Step 1: Clone Your GitHub Repository
-Use the following command to clone your repository. Replace `<your_token>` with your GitHub personal access token (PAT):
+1. **Clone the repository**
 
 ```bash
-!git clone https://<your_token>@github.com/PandaPool85/OMSAPracticum.git
+git clone https://github.gatech.edu/badams76/OMSAPracticum.git
+cd OMSAPracticum
 ```
----
 
-## Step 2: Navigate to the Repository Directory
-After cloning, navigate to the repository directory:
+2. **Create a virtual environment (recommended)**
+
 ```bash
-%cd /drive/MyDrive/<repository_name>
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
----
 
-## Step 3: Configure Git User Information
-Set your username and email for Git (only needs to be done once):
+3. **Install the required dependencies**
+
 ```bash
-!git config --global user.name "Your Name"
-!git config --global user.email "your_email@example.com"
+pip install -r requirements.txt
 ```
 
 ---
 
-## Step 4: Make Changes and Save Files
-Make changes/edits in Colab or upload your updated files to the repository folder.
+### 🗃️ Create the Database
+
+Follow the instructions listed [here](https://github.gatech.edu/badams76/OMSAPracticum/tree/main/notebooks/DB_Creation) that initializes and populates the database:
+
+Make sure the relevant data files are available as expected by the notebook.
 
 ---
 
-## Step 5: Stage Changes
-Stage the changes you made:
-```bash
-!git add .
-```
+### 📂 Notebook Modules Overview
+
+This repository is organized into modular subfolders, each representing a key modeling approach. Below is a summary of each module along with its individual `README` for execution details.
+
+| Module | Description |
+|--------|-------------|
+| [VIX Time Series Modeling](https://github.gatech.edu/badams76/OMSAPracticum/tree/main/notebooks/VIX%20Time%20Series%20Modeling) | Forecasts market volatility using VIX time series data. Includes regression and classification models. |
+| [Topic Modeling](https://github.gatech.edu/badams76/OMSAPracticum/tree/main/notebooks/Topic%20Modeling) | Applies BERTopic to extract themes from financial news and evaluate their predictive power for market movement. |
+| [Token Word Score & Sentiment Analysis](https://github.gatech.edu/badams76/OMSAPracticum/tree/main/notebooks/Token%20Word%20Score%20and%20Sentiment%20Analysis) | Computes token-level risk scores using sentiment polarity of headline tokens to predict market direction. |
+| [Alternative Risk Score with NER + TA](https://github.gatech.edu/badams76/OMSAPracticum/tree/main/notebooks/Alternative%20Risk%20Score%20Method%20with%20NER%20and%20TA) | Uses Named Entity Recognition and Technical Analysis (TA) features to construct an alternate risk scoring approach. |
+
+Each folder contains:
+- A notebook implementing the core method
+- A `requirements.txt` file for dependencies
+- A dedicated `README.md` with setup and execution instructions
 
 ---
-
-## Step 6: Commit Changes
-Commit your changes with a message:
-```bash
-!git commit -m "Your commit message"
-```
-
----
-
-## Step 7: Push Changes to GitHub
-Push your changes back to the repository:
-```bash
-!git push origin main
-```
----
-_*NOTE: you need a personal access token due to this repo being private, here is how to get one._
-
-## Generating a GitHub Personal Access Token (PAT)
-
-1. Go to [GitHub Developer Settings](https://github.com/settings/tokens).
-2. Click **Generate new token**.
-3. Select the appropriate **Scopes**:
-   - `repo` (for full repository control).
-4. Set an expiration date for the token (optional).
-5. Click **Generate token** and copy the token. 
-
-### Important:
-Store your token securely as it will not be shown again. Use this token in place of your password for Git operations.
-
----
-
-Follow these steps to manage your changes in Colab with your GitHub repository efficiently!
