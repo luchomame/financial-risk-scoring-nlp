@@ -1,0 +1,18 @@
+# Core Python packages
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+gensim
+python-dotenv
+spacy
+
+# GPU-accelerated libraries - install via RAPIDS based on your CUDA version
+# See: https://docs.rapids.ai/start/
+cudf
+cuml
+
+# Optional utilities
+pathlib
