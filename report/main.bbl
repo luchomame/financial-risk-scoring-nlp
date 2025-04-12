@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{ChartSchool}(2025{\natexlab{a}})]{chartschool_bollinger}
+{ChartSchool}.
+\newblock Bollinger bands.
+\newblock \url{https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_bands}, 2025{\natexlab{a}}.
+\newblock Accessed: April 4, 2025.
+
+\bibitem[{ChartSchool}(2025{\natexlab{b}})]{chartschool_rsi}
+{ChartSchool}.
+\newblock Relative strength index (rsi).
+\newblock \url{https://school.stockcharts.com/doku.php?id=technical_indicators:relative_strength_index_rsi}, 2025{\natexlab{b}}.
+\newblock Accessed: April 4, 2025.
+
+\bibitem[{ChartSchool}(2025{\natexlab{c}})]{chartschool_stochastic}
+{ChartSchool}.
+\newblock Stochastic oscillator.
+\newblock \url{https://school.stockcharts.com/doku.php?id=technical_indicators:stochastic_oscillator_fast_slow_and_full}, 2025{\natexlab{c}}.
+\newblock Accessed: April 4, 2025.
+
+\bibitem[Genc(2020)]{genc2020finbert}
+Zeynep Genc.
+\newblock Finbert: Financial sentiment analysis with bert.
+\newblock \url{https://medium.com/prosus-ai-tech-blog/finbert-financial-sentiment-analysis-with-bert-b277a3607101}, July 2020.
+
+\bibitem[Haider et~al.(2020)Haider, Hossin, Mahi, and Arif]{9230670}
+Mofiz~Mojib Haider, Md.~Arman Hossin, Hasibur~Rashid Mahi, and Hossain Arif.
+\newblock Automatic text summarization using gensim word2vec and k-means clustering algorithm.
+\newblock In \emph{2020 IEEE Region 10 Symposium (TENSYMP)}, pages 283--286, 2020.
+\newblock \doi{10.1109/TENSYMP50017.2020.9230670}.
+
+\bibitem[Hu et~al.(2018)Hu, Bose, Koh, and Liu]{hu2018}
+Zhiyong Hu, Indranil Bose, Nancy~S Koh, and Ling Liu.
+\newblock Listening to the crowd: Automated analysis of financial news and social media to detect and predict abnormal returns.
+\newblock In \emph{Proceedings of the 51st Hawaii International Conference on System Sciences}, 2018.
+
+\bibitem[Kliegr and Zamazal(2018)]{KLIEGR2018174}
+Tomáš Kliegr and Ondřej Zamazal.
+\newblock Antonyms are similar: Towards paradigmatic association approach to rating similarity in simlex-999 and wordsim-353.
+\newblock \emph{Data & Knowledge Engineering}, 115:\penalty0 174--193, 2018.
+\newblock ISSN 0169-023X.
+\newblock \doi{https://doi.org/10.1016/j.datak.2018.03.004}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0169023X17301325}.
+
+\bibitem[Pratap(2023)]{pratap2023dbscan}
+Alok Pratap.
+\newblock Exploring the benefits of dbscan and hdbscan in remote sensing technology.
+\newblock \url{https://medium.com/@alokguy2004/exploring-the-benefits-of-dbscan-and-hdbscan-in-remote-sensing-technology-3c8e37985167}, February 2023.
+\newblock URL \url{https://medium.com/@alokguy2004/exploring-the-benefits-of-dbscan-and-hdbscan-in-remote-sensing-technology-3c8e37985167}.
+
+\bibitem[Sharma et~al.(2025)Sharma, Becker, Tepera, and Gama~Dessavre]{sharma2025nvidia}
+Shubham Sharma, Nick Becker, Bryan Tepera, and Daniel Gama~Dessavre.
+\newblock Nvidia cuml brings zero code change acceleration to scikit-learn, March 31 2025.
+\newblock URL \url{https://developer.nvidia.com/blog/nvidia-cuml-brings-zero-code-change-acceleration-to-scikit-learn/}.
+\newblock NVIDIA Technical Blog.
+
+\bibitem[Tetlock(2007)]{tetlock2007}
+Paul~C Tetlock.
+\newblock Giving content to investor sentiment: The role of media in the stock market.
+\newblock \emph{The Journal of Finance}, 62\penalty0 (3):\penalty0 1139--1168, 2007.
+
+\end{thebibliography}

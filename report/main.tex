@@ -7,6 +7,7 @@
 \usepackage{multicol}
 \usepackage{url}
 \usepackage{subcaption}
+\usepackage[numbers]{natbib}
 \def\UrlBreaks{\do\/\do-} %% NEED THIS TO WRAP AROUND LONG URLS
 
 \title{Final Report: NLP-Driven Financial Sentiment Analysis and Risk Scoring}
@@ -1323,13 +1324,6 @@ Enhance technical Analysis and NLP based analysis by using Reinforcement Learnin
 
 Selecting an optimal approach—or a combination thereof—depends on practical constraints, data availability, and computational resources. Often, hybrid strategies, such as segmenting data and using mixture-of-experts or multi-task frameworks enhanced by additional data streams, provide the most robust outcomes. Future work could involve iterative prototyping, rigorous validation against historical data, and careful evaluation of practical constraints.
 
-\section{Workload Distribution}
-\begin{itemize}
-    \item \textbf{Luis Tupac:} In charge of database creation and maintenance, data pipelines, and data transformation; FinBERT sentiment classification on financial reports, headline news, and new testing data. Worked on VIX Time Series Modeling and Thematic Clustering approaches. 
-    \item \textbf{Brian Adams:} Exploratory data analysis, experimenting with the calculation of risk scores, and exploring different modeling approaches (topic modeling, token score with sentiment).
-    \item \textbf{Hilung Huang:} Overall project approach, initial modeling, alternative risk score method, Named Entity Recognition enhancement, technical analysis addition, and coordination of tasks.
-\end{itemize}
-
 \section{Conclusion}
 
 This project has extensively demonstrated the potential of NLP-driven approaches to predict market volatility through detailed analysis of financial sentiment indicators. We systematically explored and compared various modeling strategies, including token-level sentiment analytics, volatility forecasting using VIX, topic modeling, and multi-feature ensembles. Our results clearly indicate that models integrating comprehensive token-based risk scores significantly outperform simpler sentiment-only models, validating our initial hypotheses regarding the importance of nuanced textual insights.
@@ -1338,20 +1332,51 @@ We also found that predictive accuracy greatly benefits from adequate data volum
 
 Future efforts extending this work should focus on advanced hybrid approaches, such as segmentation-based clustering, hierarchical multitask modeling, dynamic ensemble methods, and reinforcement learning as outlined in our recommended next steps. Ultimately, by continuing to refine these methods and rigorously validating them against diverse market conditions, the proposed sentiment-based Risk Scores can evolve into powerful, actionable tools for investors aiming to anticipate and respond effectively to market inflection points.
 
+\clearpage
+\section{Workload Distribution}
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{|p{4cm}|p{6cm}|p{3cm}|}
+\hline
+\textbf{Task Description} & \textbf{Details} & \textbf{Team Member} \\
+\hline
+Database Creation & Designed database, created data pipelines, and transformed data & Luis Tupac \\
+\hline
+Sentiment Analysis with Pre-trained Models & Ran FinBERT sentiment classification on financial reports and headline news articles & Luis Tupac \\
+\hline
+VIX Time Series Modeling & Built ARIMA and ARMA-GARCH models, classified future price movement based on VIX dynamics & Luis Tupac \\
+\hline
+Thematic Clustering & Implemented Word2Vec, DBSCAN/HDBSCAN, and FinBERT clustering pipelines & Luis Tupac \\
+\hline
+EDA (Exploratory Data Analysis) & Conducted initial exploration of financial news and stock price data to identify trends, price movements, and article volume patterns & Brian Adams \\
+\hline
+Risk Score Computation & Developed preliminary and token-focused risk scores by aggregating article counts, sentiment, and word-level indicators & Brian Adams \\
+\hline
+Model Experimentation & Tested baseline and advanced models using features from sentiment, token, and topic modeling approaches & Brian Adams \\
+\hline
+Topic Modeling & Applied BERTopic for unsupervised extraction of market themes and engineered topic-based predictors & Brian Adams \\
+\hline
+High-Level Project Design & Developed overall project approach and schematic to guide the team’s efforts across phases & Hilung Huang \\
+\hline
+Initial Modeling & Explored early modeling strategies including word frequency-based risk scores and sentiment-price correlation & Hilung Huang \\
+\hline
+NER and Technical Indicators & Added Named Entity Recognition preprocessing and technical indicators (RSI, Bollinger, Stochastic) for additional experimentation & Hilung Huang \\
+\hline
+\end{tabular}
+\caption{Team Member Workload Distribution.}
+\label{tab:workload-distribution}
+\end{table}
 
-\bibliographystyle{plain}
+\twocolumn[
+\begin{@twocolumnfalse}
+\begingroup
+\raggedright
+\sloppy
+\bibliographystyle{plainnat}
 \bibliography{references}
-% \begin{thebibliography}{9}
-
-% \bibitem{bollinger}
-% ChartSchool. \textit{Bollinger Bands}. Retrieved from \url{https://school.stockcharts.com/doku.php?id=technical_indicators:bollinger_bands} (Accessed: April 4, 2025)
-
-% \bibitem{rsi}
-% ChartSchool. \textit{Relative Strength Index (RSI)}. Retrieved from \url{https://school.stockcharts.com/doku.php?id=technical_indicators:relative_strength_index_rsi} (Accessed: April 4, 2025)
-
-% \bibitem{stochastic}
-% ChartSchool. \textit{Stochastic Oscillator}. Retrieved from \url{https://school.stockcharts.com/doku.php?id=technical_indicators:stochastic_oscillator_fast_slow_and_full} (Accessed: April 4, 2025)
-
-% \end{thebibliography}
+\endgroup
+\end{@twocolumnfalse}
+]
 
 \end{document}
