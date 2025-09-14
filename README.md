@@ -67,20 +67,6 @@ This project integrates a rich set of financial and textual datasets spanning th
 
 ---
 
-Would you like me to patch this into your actual `README.md` file or prepare a Markdown version for you to copy in manually?
-
-### Compliance and Key Contacts
-
-To ensure compliance, all participants are required to:
-- Sign a Non-Disclosure Agreement (NDA).
-- Use NDR-provided communication channels for project-related correspondence.
-  
-Primary Contact: [Kiersten Engel](mailto:Kiersten.engel@ndr.com)
-
-For a detailed project description, refer to the [Kick-Off Presentation PDF](https://github.gatech.edu/badams76/OMSAPracticum/blob/main/Ga%20Tech%20Spring%2025%20Kick%20Off.pdf).
-
----
-
 ### 📦 Setup Instructions
 
 1. **Clone the repository**
